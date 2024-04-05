@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import removeAccents from "remove-accents";
 export default function Table(props) {
     const [data, setData] = useState(props.data);
-
+    useEffect(() => {
+        setData(props.data);
+    }, [props.data]);
     return (
         <div className="px-20 ">
             <div className=" table border-collapse border w-full mt-2  bg-white table-fixed ">
