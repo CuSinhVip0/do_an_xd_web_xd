@@ -37,7 +37,7 @@ function ViewMark() {
         }
     };
     return (
-        <>
+        <div className="my-10">
             <div className="my-10 max-w-[640px] flex flex-col justify-center items-center gap-5 mx-auto bg-[#D9D9D9] rounded-md py-10 shadow-xl border-[1px] border-gray-400">
                 <input
                     value={input}
@@ -88,7 +88,7 @@ function ViewMark() {
                     Nhập mã số sinh viên vào đi
                 </p>
             )}
-        </>
+        </div>
     );
 }
 

@@ -20,9 +20,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={`${inter.className} box-border`}>
+            <body className={`${inter.className} box-border overflow-y-scroll`}>
                 <Header />
-
                 <Providers>
                     <main className="pt-[96px] bg-white min-h-screen ">{children}</main>
                 </Providers>
