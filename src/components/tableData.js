@@ -57,9 +57,9 @@ export default function Table(props) {
                     {data &&
                         data.map((value, index) => {
                             const avg =
-                                value.diemquatrinh * (value.ptramquatrinh / 10) +
-                                value.diemgiuaki * (value.ptramgiuaki / 10) +
-                                value.diemcuoiki * (value.ptramcuoiki / 10);
+                                value.diemquatrinh * (value.ptramquatrinh / 100) +
+                                value.diemgiuaki * (value.ptramgiuaki / 100) +
+                                value.diemcuoiki * (value.ptramcuoiki / 100);
 
                             const k = { ...value, AvgScore: avg, result: avg > 5 ? "PASS" : "FAIL" };
                             return (
