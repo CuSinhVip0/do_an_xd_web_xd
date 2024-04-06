@@ -66,7 +66,9 @@ export default function Table(props) {
                                 <div
                                     key={index}
                                     id={Object.values(value)[0]}
-                                    className={`table-row ${index % 2 !== 0 ? "" : "bg-[#ecf5ff]"} hover:bg-gray-200`}
+                                    className={`table-row ${
+                                        parseFloat(avg) >= 8.0 ? "bg-[#ecf5ff]" : ""
+                                    } hover:bg-gray-200`}
                                 >
                                     {Object.keys(props.titledata).map((item, index) => {
                                         var x = Object.entries(k).find((i) => i[0].trim() == item.trim());
